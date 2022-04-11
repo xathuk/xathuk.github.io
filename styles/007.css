@@ -1,0 +1,259 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+ body {
+    margin: 0 0 100px;
+	background: #eff1f4;
+	font-family: Montserrat, sans-serif;
+    background-color: #161b22;
+}
+
+.moon_position {
+    bottom: 45px !important;
+}
+
+.fa-rotate-250 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+    -webkit-transform: rotate( 250deg);
+    transform: rotate( 250deg);
+}
+
+.minha-margin {
+    margin: 5px !important;
+}
+
+.px-4-status {
+    padding-left: unset !important;
+    padding-right: 1rem !important;
+}
+
+.fa-xs {
+    font-size: 20px !important;
+}
+
+.fa-xs-moon {
+    font-size: 18px !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    -webkit-user-drag: none !important;
+}
+ .xp_profile {
+	 position: relative;
+	 min-width: 320px;
+	 height: 333px;
+	 margin: 0 auto;
+}
+ .xp_profile_bg {
+	 position: absolute;
+	 height: 320px;
+	 width: 100%;
+     background-image: url('https://img.xatblog.net/image/eQcI5GeXvV.jpg') !important;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     box-shadow: 0 4px 16px 0 rgba(255, 211, 91, 0.466);
+}
+
+ .xp_profile_img {
+	 position: absolute;
+	 top: 70px;
+	 left: 0;
+	 right: 0;
+	 display: block;
+	 height: 190px;
+	 width: 190px;
+	 border: 5px solid #fff;
+	 border-radius: 50%;
+	 margin: 0 auto;
+	 box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+	 box-sizing: border-box;
+	 object-fit: cover;
+}
+ .xp_profile_name {
+	 position: absolute;
+	 top: 277px;
+	 left: 0;
+	 right: 0;
+	 height: 66px;
+	 width: 280px;
+	 border-radius: 4px;
+	 margin: 0 auto;
+	 background: #0d1117;
+	 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	 overflow: hidden;
+}
+ .xp_profile_name p {
+	 text-align: center !important;
+	 margin: 10px 0 !important;
+}
+ .xp_profile_name p:first-child {
+	 font-size: 16px !important;
+     color: #f3f3f3;
+}
+ .xp_profile_name p:nth-child(2) {
+	 font-size: 12px !important;
+	 color: #6d7277 !important;
+}
+ .xp_gradient_bar {
+	 position: absolute;
+	 bottom: 0;
+	 height: 4px;
+	 width: 100%;
+	 background-image: linear-gradient(90deg, #d00fd6, #3ccafa);
+}
+
+
+/* zzzzz */
+
+.list {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 380px);
+    grid-gap: 50px;
+    justify-content: center;
+    margin-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.list2 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 380px);
+    grid-gap: 50px;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card {
+    border-radius: 0.6rem!important;
+    background-color: #0d1117;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+    padding: 1.25rem;
+    place-content: space-around;
+}
+
+.card2 {
+    border-radius: 0.6rem!important;
+    background: linear-gradient(0deg, rgba(13,17,23,1) 3%, rgba(30,215,96,1) 100%);
+    padding: 1.25rem;
+    place-content: space-around;
+}
+
+
+/* Responisve */
+@media only screen and (max-width: 768px) {
+    .list {
+        grid-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .card {
+        margin-right: 4px!important;
+        margin-left: 4px!important;
+    }
+
+    .discordWidget {
+        width: calc(100% - .59rem) !important;
+    }
+
+    .list {
+        grid-gap: 14px;
+    }
+
+    .xp_profile_bg {
+        position: absolute;
+        height: 220px;
+        width: 100%;
+        background-repeat: no-repeat;
+   }
+}
+
+@media only screen and (max-width: 376px) {
+    .card {
+        --scale: calc(100% - 6%);
+        -webkit-transform:scale(var(--scale));
+        -moz-transform:scale(var(--scale));
+        -ms-transform:scale(var(--scale));
+        transform:scale(var(--scale));
+    }
+
+    .list {
+        grid-gap: 10px;
+    }
+}
+
+
+/* Card content */
+.card:hover {
+    transform: rotate(2deg);
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card-img {
+    border-radius: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    color: #f3f3f3;
+}
+
+.card-desc {
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+    margin-top: 0.1rem;
+    padding-top: 0.20rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-footer {
+    --tw-text-opacity: 1;
+    color: rgba(147, 197, 253, var(--tw-text-opacity));
+    margin-top: 0.5rem;
+}
+
+.spotify-green {
+    color: #1ed760;
+    font-size: 13px !important;
+}
+
+.spotify-stronger {
+    color: #c9c9c9;
+    font-weight: bolder;
+}
+
+.spotify-artist {
+    color: #109dd4;
+    font-size: 13px !important;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #242430;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #30303f;
+}
